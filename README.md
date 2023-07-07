@@ -26,16 +26,16 @@ Description: Register a new user.
 Request Body: User data in the JSON format (e.g., name, email, password).
 
 {
-  "fullName": "Shimbhu Kumawat",
-  "password": "Shimbhu@123",
-  "email": "sk@gmail.com"
+  "fullName": "Nizba Fathima",
+  "password": "Nizba@123",
+  "email": "nf@gmail.com"
 }
 Response:
 {
     "id": 1,
-    "fullName": "Shimbhu Kumawat",
+    "fullName": "Nizba Fathima",
     "password": "$2a$10$KVzpEHKFpX2ephA7RXLgqumnZKFy3bT8wdJMW3tYH2yqUJcpZPGSG",
-    "email": "sk@gmail.com",
+    "email": "nf@gmail.com",
     "role": "ROLE_USER"
 }
 
@@ -44,14 +44,14 @@ Method: GET
 Path: http://localhost:8081/signIn
 Description: Authenticate a user and retrieve their details.
 Authentication: Basic Authentication (Username and Password)
-Username: sk@gmail.com
-Password: Shimbhu@123
+Username: nf@gmail.com
+Password: Nizba@123
 Response:
 {
     "id": 1,
-    "fullName": "Shimbhu Kumawat",
+    "fullName": "Nizba Fathima",
     "password": "$2a$10$KVzpEHKFpX2ephA7RXLgqumnZKFy3bT8wdJMW3tYH2yqUJcpZPGSG",
-    "email": "sk@gmail.com",
+    "email": "nf@gmail.com",
     "role": "ROLE_USER"
 }
 
@@ -65,7 +65,7 @@ Authorization: Bearer
 Response: A welcome message string.
 Example:
 Bearer Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaGltYmh1Iiwic3ViIjoiSldUIFRva2VuIiwidXNlcm5hbWUiOiJza0BnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg1Njc3Mzg3LCJleHAiOjE2ODU3MDczODd9.VwM2IGD1fABjEcnNoMb4uIyBnYe3_BmZGx33dElaD-E
-Response: Welcome to Shimbhu's Website: Shimbhu Kumawat
+Response: Welcome to Nizba's Website: Nizba Fathima
 Tech Stack
 Java
 Spring Boot
